@@ -1,0 +1,163 @@
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 30%;
+    margin: auto;
+}
+.navbar{
+    width: 100%;
+    margin: 10;
+    padding: 10;
+   background-color: rgb(236, 208, 208);
+   color: rgb(24, 17, 17);
+  }
+*{
+     margin: 10;
+     padding: 10;
+     box-sizing: border-box;
+    }
+body{
+     font-family: sans-serif;
+    }
+a{
+     text-decoration: none;
+    }
+li{
+     list-style: none;
+    }
+.menu{
+   display: flex;
+   gap: 1em;
+   font-size: 21px;
+  }
+.menu li:hover {
+    background-color:#555;
+   color: f2f2f2;
+   transition: 0.3s ease;
+  }
+.menu li {
+    padding: 20px 20px;
+  }
+  /*RESPONSIVE NAVBAR MENU STARTS*/
+  /* CHECKBOX HACK */
+input[type=checkbox]{
+   display: none;
+  } 
+  /*SIDE TOGGLE MENU*/
+.collapse {
+   display: none;
+   font-size: 14px;
+   user-select: none;
+   padding: 10px 10px;
+   cursor: pointer;
+  }
+  /* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+   display:none;
+   position: absolute;
+   background-color:#222;
+   right: 0;
+   left: 0;
+   text-align: center;
+   padding: 16px 0;
+  }
+.menu li:hover {
+   display: inline-block;
+   color: f2f2f2;
+   transition: 0.3s ease;
+  }
+.menu li + li {
+   margin-top: 12px;
+  }
+input[type=checkbox]:checked ~ .menu{
+   display: block;
+  }
+.side-toggle {
+   display: block;
+  }
+.collapse{
+   left: 50%;
+   top: 30px;
+   transform: translateX(35%);
+  }
+.dropdown li:hover{
+   background-color: #4c9e9e;
+  }
+  }
+ul{
+    list-style-type: none;
+    margin: 1000;
+    right: 90;
+    padding: 1110;
+    overflow: hidden;
+    background-color: rgb(187, 130, 130);
+  }
+  
+li{
+    float: right;
+  }
+  
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 144px 166px;
+    text-decoration: none;
+  }
+  
+li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+.active {
+    background-color: #aa04a2;
+  }
+.all-browsers {
+    margin: 0;
+    padding: 5px;
+    background-color: lightgray;
+  }
+.heart{
+
+    color: red;
+  
+    text-decoration: none;
+  
+    margin: 0 190px;
+  
+    font-size: 50px;
+  
+  }
+  
+.desktop{
+  
+    color: black;
+  
+    text-decoration: none;
+  
+    margin: 0 190px;
+  
+    font-size: 50px;
+  
+  }
+  
+.telegram{
+  
+    color:black;
+  
+    text-decoration: none;
+  
+    margin:0 190px;
+  
+    font-size: 50px;
+  
+  } 
+h4{
+    margin-left: 140px;
+  }
+footer{
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
+   }
